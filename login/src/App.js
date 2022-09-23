@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from "./components/views/loginPage/Login";
+import Login from "./components/views/login/Login";
 import Header from "./components/views/header/Header";
+import Main from "./components/views/mainPage/Main";
+import SignUp from "./components/views/login/Signup";
 import React from "react";
 
 // ReactDOM.render(
@@ -16,9 +18,11 @@ import React from "react";
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
-        <Header />
+        <Route exact path="/" component={Main} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={SignUp} />
       </Switch>
     </Router>
   );

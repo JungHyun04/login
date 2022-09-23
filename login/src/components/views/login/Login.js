@@ -9,6 +9,10 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 
+function handleClick(e) {
+  window.location.href = "/";
+}
+
 export default function SignIn() {
   return (
     <div>
@@ -56,6 +60,7 @@ export default function SignIn() {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
+            onClick={handleClick}
           >
             Sign In
           </Button>
@@ -66,7 +71,7 @@ export default function SignIn() {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/SignUp" variant="body2">
                 {"Sign Up"}
               </Link>
             </Grid>
