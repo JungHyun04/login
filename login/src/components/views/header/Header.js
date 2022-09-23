@@ -6,7 +6,7 @@ export default function Header() {
     <div className="Header">
       <a href="/">Home</a>
       <a href="/login" className="login">
-        로그인d
+        로그인
       </a>
     </div>
   );

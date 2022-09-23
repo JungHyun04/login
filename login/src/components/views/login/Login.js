@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 
-function handleClick(e) {
+function Click(e) {
   window.location.href = "/";
 }
 
@@ -60,7 +60,10 @@ export default function SignIn() {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
-            onClick={handleClick}
+            onClick={() => {
+              Click();
+              alert("alert");
+            }}
           >
             Sign In
           </Button>
