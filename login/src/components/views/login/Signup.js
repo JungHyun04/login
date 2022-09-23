@@ -85,7 +85,7 @@ export default function SignUp() {
             <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="동의"
+                label="동의a"
               />
             </Grid>
           </Grid>
