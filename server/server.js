@@ -6,10 +6,6 @@ const cors = require("cors");
 
 app.use(cors(corsOptions));
 
-app.get("/", (req, res) => {
-  res.send("avvas");
-});
-
 app.listen(PORT, () => {
   console.log(`Server On : http://localhost:${PORT}/`);
 });

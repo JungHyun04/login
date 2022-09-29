@@ -4,8 +4,6 @@ import Header from "./components/views/header/Header";
 import Main from "./components/views/mainPage/Main";
 import SignUp from "./components/views/login/Signup";
 import React from "react";
-
-// ReactDOM.render(
 //   <React.StrictMode>
 //     <BrowserRouter>
 //       <Header />

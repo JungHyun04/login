@@ -1,15 +1,18 @@
-import React from "react";
 import "./Header.css";
-import ThemeContext from "../theme/Theme";
+import ToggleSwitch from "../theme/Checkbox";
 
 export default function Header() {
   return (
-    <div className="Header">
-      <a href="/">Home</a>
-      {/* <ThemeContext /> */}
-      <a href="/login" className="login">
-        로그인
-      </a>
-    </div>
+    <>
+      <div className="Header">
+        <a href="/">Home</a>
+        <div className="blo">
+          <ToggleSwitch className="toggle" />
+          <a href="/login" className="login">
+            로그인
+          </a>
+        </div>
+      </div>
+    </>
   );
 }
